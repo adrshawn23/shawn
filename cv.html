@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Curriculum Vitae</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #2c3e50, #34495e);
+            margin: 0;
+            padding: 0;
+            color: #ecf0f1;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: rgba(44, 62, 80, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        }
+        h2 {
+            font-size: 2em;
+            margin-top: 20px;
+            border-bottom: 2px solid #e74c3c;
+            padding-bottom: 5px;
+        }
+        p {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .skill {
+            background-color: #e74c3c;
+            border-radius: 5px;
+            padding: 10px 15px;
+            margin: 5px;
+            font-size: 1em;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #e67e22;
+            padding: 10px 20px;
+            border-radius: 30px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        a:hover {
+            background-color: #d35400;
+            transform: translateY(-3px);
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #bdc3c7;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Curriculum Vitae</h1>
+        <p><strong>Name:</strong> Jhon Arl L. Celendron</p>
+        <p><strong>Address:</strong> Lower Sampaguita, Banilad, Mandaue City</p>
+        <p><strong>Email:</strong> jhonarllauron28@gmail.com</p>
+        <p><strong>Phone:</strong> 09423816301</p>
+
+        <div class="section">
+            <h2>Objective</h2>
+            <p>To secure a challenging position in a reputable organization to expand my learnings, knowledge, and skills.</p>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <p><strong>BS in Information Systems</strong>, Cebu Technological University Main Campus — 3rd Year</p>
+            <p><strong>General Academic Strand</strong>, Strategic Project Management Academy Inc. (SPM) — Senior Highschool</p>
+        </div>
+
+        <div class="section">
+            <h2>Experience</h2>
+            <p><strong>Service Crew</strong>, Coast Pacific Golden Milestone Corporation — Current</p>
+            <p>• Preparing and serving food and drinks to our customers.</p>
+            <p>• Following health and safety standards, and keeping the work area clean and tidy.</p>
+            <p><strong>Sales Clerk</strong>, Sanford Marketing Corporation — March 11 - Augut 05, 2022</p>
+            <p>• Supporting the daily operations of the store, organizing display shelves.</p>
+            <p>• Helping costumers finding specific products within the store.</p>
+            <p>• Taking inventory of products and restocking shelves as needed.</p>
+        </div>
+
+        <div class="section">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div class="skill">Computer Literacy</div>
+                <div class="skill">Communication Skills</div>
+                <div class="skill">Adaptability</div>
+                <div class="skill">Excellent Costumer Service</div>
+                <div class="skill">Teamwork</div>
+            </div>
+        </div>
+
+        <a href="Home.php">Back to Main Page</a>
+        
+        <footer>
+            <p>Created by Jhon Arl L. Celendron | Date: <?php echo date("F j, Y"); ?></p>
+        </footer>
+    </div>
+</body>
+</html>

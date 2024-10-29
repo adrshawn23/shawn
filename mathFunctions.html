@@ -1,0 +1,67 @@
+<?php
+$menNumbers = [5, 12, 25, 30, 45];
+$menDecimals = [3.1, 6.4, 9.7, 15.3, 20.8];
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Math Functions</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #2c3e50, #3498db);
+            color: #ecf0f1;
+            margin: 0;
+            padding: 20px;
+        }
+        h2 {
+            text-align: center;
+            color: #fff;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgba(44, 62, 80, 0.9);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+        p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e74c3c;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        a:hover {
+            background-color: #c0392b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Math Functions</h2>
+        <p>Absolute of <?= $menDecimals[0]; ?>: <?= abs($menDecimals[0]); ?></p>
+        <p>Square Root of <?= $menNumbers[1]; ?>: <?= sqrt($menNumbers[1]); ?></p>
+        <p>Power of <?= $menNumbers[2]; ?> raised to 2: <?= pow($menNumbers[2], 2); ?></p>
+        <p>Random Number: <?= rand(1, 100); ?></p>
+        <p>Maximum of numbers: <?= max($menNumbers); ?></p>
+        <p>Minimum of numbers: <?= min($menNumbers); ?></p>
+        <p>Sum of decimals: <?= array_sum($menDecimals); ?></p>
+        <p>Mean of numbers: <?= array_sum($menNumbers) / count($menNumbers); ?></p>
+        <p>Ceiling of <?= $menDecimals[3]; ?>: <?= ceil($menDecimals[3]); ?></p>
+        <p>Floor of <?= $menDecimals[4]; ?>: <?= floor($menDecimals[4]); ?></p>
+        <p>Round <?= $menDecimals[1]; ?>: <?= round($menDecimals[1]); ?></p>
+        <a href="Home.php">Back to Main Page</a>
+    </div>
+</body>
+</html>

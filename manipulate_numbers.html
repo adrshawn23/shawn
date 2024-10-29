@@ -1,0 +1,73 @@
+<?php
+$participationScores = [85, 90, 78, 88];
+$projectScores = [92, 95];
+$examScores = [80, 85];
+
+$participationAverage = array_sum($participationScores) / count($participationScores);
+$projectAverage = array_sum($projectScores) / count($projectScores);
+$examAverage = array_sum($examScores) / count($examScores);
+
+$midtermGrade = ($participationAverage * 0.4) + ($projectAverage * 0.4) + ($examAverage * 0.2);
+$tentativeFinalGrade = ($midtermGrade + $projectAverage) / 2; 
+$finalGrade = ($midtermGrade * 0.5) + ($examAverage * 0.5); 
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manipulating Numbers</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4c3; 
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #558b2f; 
+        }
+        h2 {
+            text-align: center;
+            color: #33691e; 
+        }
+        .results {
+            background-color: #c5e1a5; 
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            margin: 20px auto;
+            max-width: 600px;
+        }
+        p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #1976d2; 
+            padding: 10px 20px;
+            border-radius: 30px;
+            transition: background-color 0.3s;
+        }
+        a:hover {
+            background-color: #1565c0; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Grade Summary</h1>
+    <h2>Midterm Evaluation</h2>
+    <div class="results">
+        <p>Midterm Grade: <?= number_format($midtermGrade, 2); ?></p>
+        <p>Tentative Final Grade: <?= number_format($tentativeFinalGrade, 2); ?></p>
+        <p>Final Grade: <?= number_format($finalGrade, 2); ?></p>
+    </div>
+    <a href="Home.php">Return to Main Page</a>
+</body>
+</html>

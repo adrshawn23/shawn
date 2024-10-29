@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Development Project</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #2c3e50, #34495e);
+            margin: 0;
+            padding: 0;
+            color: #ecf0f1;
+        }
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: rgba(44, 62, 80, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+            color: #e67e22; 
+        }
+        p {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .card {
+            background-color: #2980b9; 
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px;
+            width: 220px; 
+            transition: transform 0.3s;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7); 
+        }
+        .card a {
+            text-decoration: none;
+            color: #ecf0f1; 
+            font-size: 1.1em;
+            text-align: center;
+            display: block;
+        }
+        footer {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #bdc3c7;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            .card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Web Application Development Project</h1>
+        <p>Name: Jhon Arl L. Celendron</p>
+        <p>Course/Yr/Section: BSIS/3/1</p>
+        <div class="card-container">
+            <div class="card"><a href="cv.php">Curriculum Vitae</a></div>
+            <div class="card"><a href="variables.php">The Use of Variables</a></div>
+            <div class="card"><a href="manipulate_numbers.php">Manipulating Numbers</a></div>
+            <div class="card"><a href="mathFunctions.php">Using Math Functions</a></div>
+            <div class="card"><a href="constants.php">Using Constants</a></div>
+            <div class="card"><a href="selection.php">Selection Statements</a></div>
+            <div class="card"><a href="loops.php">Loop Statements</a></div>
+            <div class="card"><a href="functions.php">User-defined Functions</a></div>
+            <div class="card"><a href="single_dimensional.php">Single-dimensional Array</a></div>
+            <div class="card"><a href="two_dimensional.php">Two-dimensional Array</a></div>
+        </div>
+        <footer>
+            <p>Created by Jhon Arl L. Celendron | Date: <?php echo date("F j, Y"); ?></p>
+        </footer>
+    </div>
+</body>
+</html>
