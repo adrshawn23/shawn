@@ -1,7 +1,0 @@
-{
-  "name": "project",
-  "description": "A simple PHP project",
-  "require": {
-    "php": "^7.4"
-  }
-}
